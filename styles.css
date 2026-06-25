@@ -225,10 +225,10 @@ h1, h2, h3, p, ul, ol { margin: 0; }
 .principles li {
   font-family: var(--display); font-weight: 400;
   font-size: clamp(1.6rem, 3.8vw, 2.8rem); line-height: 1.12; color: var(--ink);
-  padding: clamp(1rem, 1.8vw, 1.4rem) 0; border-bottom: 1px solid var(--hairline);
+  padding: clamp(0.7rem, 1.4vw, 1.1rem) 0; border-bottom: 1px solid var(--hairline);
   display: flex; gap: 1.2rem; align-items: baseline;
 }
-.p-num { font-family: var(--body); font-size: 0.78rem; font-weight: 600; letter-spacing: 0.12em; color: var(--cognac-deep); flex: 0 0 auto; transform: translateY(-0.2em); }
+.p-num { font-family: var(--body); font-size: 0.62rem; font-weight: 600; letter-spacing: 0.12em; color: var(--cognac-deep); flex: 0 0 auto; transform: translateY(-0.2em); line-height: 1; }
 
 /* ---- About trio ---- */
 .trio { list-style: none; padding: 0; margin-top: clamp(1.8rem, 3.5vw, 2.8rem); display: flex; flex-wrap: wrap; gap: 0.6rem 2.6rem; }
@@ -237,8 +237,8 @@ h1, h2, h3, p, ul, ol { margin: 0; }
 
 /* ---- What we help with: rows ---- */
 .rows { list-style: none; padding: 0; margin-top: clamp(2.2rem, 4vw, 3.4rem); border-top: 1px solid var(--hairline); }
-.row { display: grid; grid-template-columns: 3.5rem 11rem minmax(0,1fr); gap: 1.6rem; align-items: baseline; padding: clamp(1.1rem, 2.2vw, 1.8rem) 0; border-bottom: 1px solid var(--hairline); }
-.row-num { font-family: var(--display); font-size: 1.5rem; font-weight: 500; color: var(--cognac); }
+.row { display: grid; grid-template-columns: 3.5rem 11rem minmax(0,1fr); gap: 1.6rem; align-items: baseline; padding: clamp(0.8rem, 1.6vw, 1.4rem) 0; border-bottom: 1px solid var(--hairline); }
+.row-num { font-family: var(--display); font-size: 1.2rem; font-weight: 500; color: var(--cognac); line-height: 1; }
 .row h3 { font-family: var(--display); font-weight: 500; font-size: clamp(1.55rem, 3vw, 2.2rem); line-height: 1; color: var(--ink); }
 .row p { color: var(--text-muted); font-size: 1.05rem; }
 .row:hover h3 { color: var(--cognac-deep); transition: color 0.25s var(--ease); }
@@ -267,8 +267,8 @@ h1, h2, h3, p, ul, ol { margin: 0; }
 .process-inner { position: relative; z-index: 1; }
 .process .hl { color: var(--linen); }
 .steps { list-style: none; padding: 0; margin-top: clamp(2.2rem, 4vw, 3.4rem); display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1.4rem; }
-.step { border-top: 1px solid var(--hairline-dark); padding-top: 1rem; }
-.step-num { font-family: var(--display); font-size: 1.3rem; font-weight: 600; color: var(--cognac); display: block; margin-bottom: 0.3rem; }
+.step { border-top: 1px solid var(--hairline-dark); padding-top: 0.6rem; }
+.step-num { font-family: var(--display); font-size: 1.05rem; font-weight: 600; color: var(--cognac); display: block; margin-bottom: 0.1rem; line-height: 1; }
 .step h3 { font-family: var(--display); font-weight: 500; font-size: clamp(1.5rem, 2.6vw, 2.1rem); color: var(--linen); }
 
 /* ---- Team ---- */
