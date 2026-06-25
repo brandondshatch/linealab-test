@@ -152,24 +152,24 @@ h1, h2, h3, p, ul, ol { margin: 0; }
 .primary-nav { display: flex; align-items: center; gap: 1.9rem; }
 .primary-nav a { text-decoration: none; font-size: 0.95rem; font-weight: 500; color: var(--text); position: relative; padding: 0.2rem 0; }
 .primary-nav a::after {
-  content: ""; position: absolute; left: 0; bottom: -2px; width: 100%; height: 1.5px;
-  background: var(--cognac); transform: scaleX(0); transform-origin: left; transition: transform 0.28s var(--ease);
-}
 .primary-nav a:hover::after { transform: scaleX(1); }
 .primary-nav a:hover { color: var(--ink); }
-.nav-cta { 
+.primary-nav a.nav-cta { 
   background: var(--cognac); 
   color: #fff !important; 
   font-weight: 600 !important; 
-  padding: 0.5rem 1.2rem; 
+  padding: 0.5rem 1.4rem; 
   border-radius: 99px; 
   transition: all 0.25s var(--ease);
 }
-.nav-cta:hover { 
+.primary-nav a.nav-cta:hover { 
   background: var(--cognac-deep); 
   color: #fff !important;
   transform: translateY(-2px); 
   box-shadow: 0 4px 12px rgba(193, 125, 60, 0.2); 
+}
+.primary-nav a.nav-cta::after {
+  display: none;
 }
 
 .nav-toggle { display: none; align-items: center; gap: 0.5rem; background: transparent; border: 1px solid var(--hairline); border-radius: 999px; padding: 0.5rem 0.9rem; cursor: pointer; }
