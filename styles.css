@@ -23,7 +23,7 @@
   --hairline-dark:rgba(247, 244, 240, 0.20);
 
   --display: "Cormorant", Georgia, "Times New Roman", serif;
-  --body: "Inter", "Helvetica Neue", Arial, sans-serif;
+  --body: "Outfit", "Helvetica Neue", Arial, sans-serif;
 
   --shell: 1180px;
   --pad: clamp(1.25rem, 5vw, 4.5rem);
