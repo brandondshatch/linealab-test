@@ -106,6 +106,12 @@ h1, h2, h3, p, ul, ol { margin: 0; }
 }
 .reveal-punchy.is-visible { opacity: 1; transform: none; }
 
+/* ---------- Slow Deliberate Reveal ---------- */
+.reveal-slow {
+  transition: opacity 1.8s var(--ease), transform 1.8s var(--ease);
+  transition-delay: calc(var(--i, 0) * 450ms + 300ms) !important;
+}
+
 /* ---------- Buttons ---------- */
 .btn {
   display: inline-flex; align-items: center; gap: 0.5rem;
