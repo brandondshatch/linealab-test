@@ -155,6 +155,7 @@ h1, h2, h3, p, ul, ol { margin: 0; }
   content: ""; position: absolute; left: 0; bottom: -2px; width: 100%; height: 1.5px;
   background: var(--cognac); transform: scaleX(0); transform-origin: left; transition: transform 0.28s var(--ease);
 }
+.primary-nav a:hover::after { transform: scaleX(1); }
 .primary-nav a:hover { color: var(--ink); }
 .nav-cta { 
   background: var(--cognac); 
@@ -330,8 +331,9 @@ h1, h2, h3, p, ul, ol { margin: 0; }
     max-height: calc(100vh - 4.6rem); overflow-y: auto;
   }
   .primary-nav.is-open { transform: translateY(0); }
-  .primary-nav a { font-size: 1.5rem; display: block; width: 100%; text-align: center; }
-  .nav-cta { margin-top: 1rem; }
+  .primary-nav a { padding: 0.95rem 0; border-bottom: 1px solid var(--hairline-soft); font-size: 1.05rem; display: block; width: 100%; text-align: center; }
+  .primary-nav a::after { display: none; }
+  .nav-cta { margin-top: 1rem; border-bottom: none !important; }
   .nav-toggle { display: inline-flex; }
   body.menu-open { overflow: hidden; }
 
