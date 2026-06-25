@@ -267,7 +267,7 @@ h1, h2, h3, p, ul, ol { margin: 0; }
 .option-feature { border: 1.5px solid var(--sage); box-shadow: 0 26px 50px -34px rgba(45,74,53,0.55); }
 .option-top { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; margin-bottom: 1.2rem; min-height: 1.6rem; }
 .option-tag { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--linen); background: var(--sage); padding: 0.35rem 0.7rem; border-radius: 999px; }
-.option-meta { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); }
+.option-meta { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); margin-left: auto; }
 .option-card h3 { font-family: var(--display); font-weight: 600; font-size: 1.85rem; line-height: 1.05; color: var(--ink); }
 .option-card p { margin-top: 0.8rem; color: var(--text-muted); font-size: 1.02rem; flex: 1 1 auto; }
 .option-cta { margin-top: 1.7rem; justify-content: center; }
