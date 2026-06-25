@@ -251,9 +251,9 @@ h1, h2, h3, p, ul, ol { margin: 0; }
 
 /* ---- What we help with: rows ---- */
 .rows { list-style: none; padding: 0; margin-top: clamp(2.2rem, 4vw, 3.4rem); border-top: 1px solid var(--hairline); }
-.row { display: grid; grid-template-columns: 3.5rem 11rem minmax(0,1fr); gap: 1.6rem; align-items: baseline; padding: clamp(0.8rem, 1.6vw, 1.4rem) 0; border-bottom: 1px solid var(--hairline); }
+.row { display: grid; grid-template-columns: 3.5rem auto minmax(0,1fr); gap: 1.6rem; align-items: baseline; padding: clamp(0.8rem, 1.6vw, 1.4rem) 0; border-bottom: 1px solid var(--hairline); }
 .row-num { font-family: var(--display); font-size: 1.2rem; font-weight: 500; color: var(--cognac); line-height: 1; }
-.row h3 { font-family: var(--display); font-weight: 500; font-size: clamp(1.55rem, 3vw, 2.2rem); line-height: 1; color: var(--ink); }
+.row h3 { font-family: var(--display); font-weight: 600; font-size: clamp(1.2rem, 2vw, 1.4rem); white-space: nowrap; line-height: 1; color: var(--ink); }
 .row p { color: var(--text-muted); font-size: 1.05rem; }
 .row:hover h3 { color: var(--cognac-deep); transition: color 0.25s var(--ease); }
 
@@ -340,7 +340,8 @@ h1, h2, h3, p, ul, ol { margin: 0; }
   .faq-grid { grid-template-columns: 1fr; }
   .faq-head { position: static; }
   .row { grid-template-columns: 3rem 1fr; }
-  .row p { grid-column: 2; }
+  .row p { grid-column: 2; margin-top: 0.2rem; }
+  .row h3 { white-space: normal; }
 }
 
 @media (max-width: 620px) {
